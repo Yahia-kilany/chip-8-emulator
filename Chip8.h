@@ -1,5 +1,5 @@
 #include <cstdint>
-class Chip_8
+class Chip8
 {
     public:
         uint8_t registers[16]{};
@@ -12,4 +12,5 @@ class Chip_8
         uint8_t soundTimer{};
         uint8_t Keys{};
         uint32_t video[64 * 32]{};
+        void LoadROM(char const* filename);
 };
